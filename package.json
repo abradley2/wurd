@@ -1,0 +1,20 @@
+{
+  "name": "wordle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "lint": "standard --fix",
+    "build": "browserify src/main.js -o public/main.bundle.js",
+    "serve": "http-server public"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "http-server": "^14.1.0",
+    "standard": "^16.0.4",
+    "yo-yo": "^1.4.1"
+  }
+}
