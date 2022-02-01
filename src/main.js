@@ -157,7 +157,7 @@ function gameboard () {
       return html`<div class="flex flex-nowrap nr1 mt1 ${rowClass}">
         ${(row || [null, null, null, null, null]).map(function (col, colIdx) {
           let colClass
-          if (SECRET_WORD.includes(col)) {
+          if (SECRET_WORD.includes(col) && (rowIdx !== activeRowIdx || status === WIN_STATUS)) {
             colClass = 'bg-yellow'
             if (SECRET_WORD[colIdx] === col) {
               colClass = 'bg-green'
