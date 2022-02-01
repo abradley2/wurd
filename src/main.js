@@ -1,6 +1,6 @@
 const html = require('yo-yo')
 
-const SECRET_WORD = 'HELLO'
+const SECRET_WORD = 'ILUVU'
 
 const PLAYING_STATUS = Symbol('PLAYING_STATUS')
 const WIN_STATUS = Symbol('WIN_STATUS')
